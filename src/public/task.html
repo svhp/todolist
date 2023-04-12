@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main  -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>Modyfikowanie zadania</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="single-task-form ">
+        <h4>Modyfikowanie zadania</h4>
+        <div class="form-control">
+          <label> ID</label>
+          <p class="task-edit-id"></p>
+        </div>
+        <div class="form-control">
+          <label for="name">Nazwa</label>
+          <input type="text" name="name" class="task-edit-name" />
+        </div>
+        <div class="form-control">
+          <label for="deadline">Termin ostateczny</label>
+          <input type="date" name="deadline" id="formdate" placeholder="deadline">
+        </div>
+
+        <div class="form-control">
+          <label for="completed">Ukonczone</label>
+          <input type="checkbox" name="completed" class="task-edit-completed" />
+        </div>
+        <button type="submit" class="block btn task-edit-btn">Wyślij</button>
+        <div class="form-alert"></div>
+      </form>
+      <a href="index.html" class="btn back-link">Powrot</a>
+    </div>
+
+    <button type="" id="logout">
+      <div id="logout-button">
+        <svg fill="#FFFFFF" height="35px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384.971 384.971" xml:space="preserve">
+          <g>
+            <g id="Sign_Out">
+              <path d="M180.455,360.91H24.061V24.061h156.394c6.641,0,12.03-5.39,12.03-12.03s-5.39-12.03-12.03-12.03H12.03
+                    C5.39,0.001,0,5.39,0,12.031V372.94c0,6.641,5.39,12.03,12.03,12.03h168.424c6.641,0,12.03-5.39,12.03-12.03
+                    C192.485,366.299,187.095,360.91,180.455,360.91z" />
+              <path d="M381.481,184.088l-83.009-84.2c-4.704-4.752-12.319-4.74-17.011,0c-4.704,4.74-4.704,12.439,0,17.179l62.558,63.46H96.279
+                    c-6.641,0-12.03,5.438-12.03,12.151c0,6.713,5.39,12.151,12.03,12.151h247.74l-62.558,63.46c-4.704,4.752-4.704,12.439,0,17.179
+                    c4.704,4.752,12.319,4.752,17.011,0l82.997-84.2C386.113,196.588,386.161,188.756,381.481,184.088z" />
+            </g>
+      </div>
+    </button>
+
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- js -->
+    <script src="./edit-task.js"></script>
+  </body>
+</html>

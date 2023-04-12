@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="./login.css" />
+</head>
+
+<body>
+
+    <main>
+        <div id="overlay"></div>
+        <div id="loading-animation"></div>
+        <form class="form contact-form">
+            <h5>Rejestracja</h5>
+            <div class="form-row">
+                <label for="username" class="form-label">Nazwa użytkownika</label>
+                <input type="text" id="username" class="form-input username-input" />
+            </div>
+            <div class="form-row">
+                <label for="password" class="form-label">Hasło</label>
+                <input type="password" id="password" class="form-input password-input" />
+            </div>
+            <div class="form-row">  
+                <label for="fname" class="form-label">Imię</label>
+                <input type="text" id="firstname" class="form-input password-input" />
+            </div>
+            <div class="form-row">
+                <label for="lname" class="form-label">Nazwisko</label>
+                <input type="text" id="lastname" class="form-input password-input" />
+            </div>
+            <div class="form-row">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-input password-input" />
+            </div>
+            <div id="message-div">
+                <div id="message-text"></div>
+            </div>
+            <div class="wrapper-buttons">
+                <button type="" id="back-btn" class="btn btn-block">Powrót</button>
+                <button type="submit" id="submit-btn" class="btn btn-block">Wyślij</button>
+                
+            </div>
+
+        </form>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./signup.js"></script>
+</body>
+
+</html>
